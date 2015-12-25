@@ -1,0 +1,38 @@
+.youtube-container { display: block; margin: 20px auto; width: 100%; max-width: 600px; }
+.youtube-player { display: block; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative;}
+img.youtube-thumb { bottom: 0; cursor: hand; cursor: pointer; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
+div.play-button { height: 72px; cursor: hand; cursor: pointer; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
+#youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.embed-wapper-lyoutube{
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.embed-wapper-lyoutube .video-iframe{
+    background: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.embed-wapper-lyoutube .video-iframe .close-video-iframe{
+    display: block;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('close-lyoutube.png') no-repeat;
+    cursor: pointer;
+}
