@@ -36,3 +36,16 @@ div.play-button { height: 72px; cursor: hand; cursor: pointer; width: 72px; left
     background: url('close-lyoutube.png') no-repeat;
     cursor: pointer;
 }
+@media (max-width:680px){
+    .embed-wapper-lyoutube .video-iframe{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .embed-wapper-lyoutube .video-iframe iframe{
+        width: 100%;
+    }
+}
